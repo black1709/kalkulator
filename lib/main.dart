@@ -65,53 +65,53 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           Expanded(
             child: Container(
               padding: EdgeInsets.all(16.0),
-              color: Colors.grey[200],
+              color: Color.fromARGB(255, 159, 159, 225),
               child: Text(
                 _input,
-                style: TextStyle(fontSize: 24.0),
+                style: TextStyle(fontSize: 50.0),
               ),
             ),
           ),
           Expanded(
             child: Container(
               padding: EdgeInsets.all(16.0),
-              color: Colors.white,
+              color: Colors.black12,
               child: Text(
                 _result.toString(),
-                style: TextStyle(fontSize: 48.0),
+                style: TextStyle(fontSize: 50.0),
               ),
             ),
           ),
           Row(
             children: <Widget>[
-              _buildButton('7'),
-              _buildButton('8'),
-              _buildButton('9'),
-              _buildButton('/'),
+              _buildButton('1', color: Colors.black),
+              _buildButton('2', color: Colors.black),
+              _buildButton('3', color: Colors.black),
+              _buildButton('/', color: Colors.black),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('4'),
-              _buildButton('5'),
-              _buildButton('6'),
-              _buildButton('*'),
+              _buildButton('4', color: Colors.black),
+              _buildButton('5', color: Colors.black),
+              _buildButton('6', color: Colors.black),
+              _buildButton('*', color: Colors.black),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('1'),
-              _buildButton('2'),
-              _buildButton('3'),
-              _buildButton('-'),
+              _buildButton('7', color: Colors.black),
+              _buildButton('8', color: Colors.black),
+              _buildButton('9', color: Colors.black),
+              _buildButton('-', color: Colors.black),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('.'),
+              _buildButton('.', color: Colors.black),
               _buildButton('0', color: Colors.black),
               _buildButton('C', color: Colors.orange),
-              _buildButton('+'),
+              _buildButton('+', color: Colors.black),
             ],
           ),
           ElevatedButton(
@@ -128,7 +128,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       child: ElevatedButton(
         child: Text(
           text,
-          style: TextStyle(fontSize: 24.0),
+          style: TextStyle(fontSize: 40.0),
         ),
         style: ElevatedButton.styleFrom(
           primary: color,
